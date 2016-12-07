@@ -145,7 +145,7 @@
 				526967B41DF827FB00A557B9 /* Fally */,
 				526967C91DF827FB00A557B9 /* FallyTests */,
 				526967D41DF827FB00A557B9 /* FallyUITests */,
-				526967DE1DF827FB00A557B9 /* Fally WatchKit App */,
+				526967DE1DF827FB00A557B9 /* Fally */,
 				526967ED1DF827FB00A557B9 /* Fally WatchKit Extension */,
 				526967B31DF827FB00A557B9 /* Products */,
 			);
@@ -194,13 +194,14 @@
 			path = FallyUITests;
 			sourceTree = "<group>";
 		};
-		526967DE1DF827FB00A557B9 /* Fally WatchKit App */ = {
+		526967DE1DF827FB00A557B9 /* Fally */ = {
 			isa = PBXGroup;
 			children = (
 				526967DF1DF827FB00A557B9 /* Interface.storyboard */,
 				526967E21DF827FB00A557B9 /* Assets.xcassets */,
 				526967E41DF827FB00A557B9 /* Info.plist */,
 			);
+			name = Fally;
 			path = "Fally WatchKit App";
 			sourceTree = "<group>";
 		};

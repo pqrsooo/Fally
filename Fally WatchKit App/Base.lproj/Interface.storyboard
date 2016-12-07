@@ -1,16 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Fally_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="28" alignment="center" verticalAlignment="bottom" title="Tap here if you're ok" id="sFq-uU-Nfa">
+                            <color key="titleColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </button>
+                        <group width="1" alignment="center" layout="vertical" id="jmq-dg-ZpY">
+                            <items>
+                                <group width="1" alignment="left" id="LEw-zQ-XyV">
+                                    <items>
+                                        <label width="1" alignment="left" text="Are you alright?   Notify for help in" textAlignment="center" numberOfLines="2" id="6oY-WL-DzR">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="52" alignment="left" id="JmX-wt-BWg">
+                            <items>
+                                <group width="1" alignment="left" id="vT0-Fl-WVS">
+                                    <items>
+                                        <label width="1" alignment="left" text="00:30" textAlignment="center" id="Rti-MA-IgO">
+                                            <color key="textColor" red="0.92156862750000001" green="0.1058823529" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="Rti-MA-IgO" id="lD2-Zg-ia3"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="335"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,9 +68,10 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Fally_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.92156862745098034" green="0.10588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
 </document>
