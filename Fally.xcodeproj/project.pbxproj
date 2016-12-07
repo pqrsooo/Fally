@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		526967B61DF827FB00A557B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967B51DF827FB00A557B9 /* AppDelegate.swift */; };
+		526967B81DF827FB00A557B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967B71DF827FB00A557B9 /* ViewController.swift */; };
+		526967BB1DF827FB00A557B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526967B91DF827FB00A557B9 /* Main.storyboard */; };
+		526967BD1DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967BC1DF827FB00A557B9 /* Assets.xcassets */; };
+		526967C01DF827FB00A557B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526967BE1DF827FB00A557B9 /* LaunchScreen.storyboard */; };
+		526967CB1DF827FB00A557B9 /* FallyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967CA1DF827FB00A557B9 /* FallyTests.swift */; };
+		526967D61DF827FB00A557B9 /* FallyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967D51DF827FB00A557B9 /* FallyUITests.swift */; };
+		526967DB1DF827FB00A557B9 /* Fally WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 526967DA1DF827FB00A557B9 /* Fally WatchKit App.app */; };
+		526967E11DF827FB00A557B9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526967DF1DF827FB00A557B9 /* Interface.storyboard */; };
+		526967E31DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967E21DF827FB00A557B9 /* Assets.xcassets */; };
+		526967EA1DF827FB00A557B9 /* Fally WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		526967F11DF827FB00A557B9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F01DF827FB00A557B9 /* InterfaceController.swift */; };
+		526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */; };
+		526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F41DF827FB00A557B9 /* NotificationController.swift */; };
+		526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967F61DF827FB00A557B9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		526967C71DF827FB00A557B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526967AA1DF827FB00A557B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526967B11DF827FB00A557B9;
+			remoteInfo = Fally;
+		};
+		526967D21DF827FB00A557B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526967AA1DF827FB00A557B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526967B11DF827FB00A557B9;
+			remoteInfo = Fally;
+		};
+		526967DC1DF827FB00A557B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526967AA1DF827FB00A557B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526967D91DF827FB00A557B9;
+			remoteInfo = "Fally WatchKit App";
+		};
+		526967EB1DF827FB00A557B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526967AA1DF827FB00A557B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526967E81DF827FB00A557B9;
+			remoteInfo = "Fally WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		526967FE1DF827FB00A557B9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				526967EA1DF827FB00A557B9 /* Fally WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526968021DF827FB00A557B9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				526967DB1DF827FB00A557B9 /* Fally WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		526967B21DF827FB00A557B9 /* Fally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fally.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		526967B51DF827FB00A557B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		526967B71DF827FB00A557B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		526967BA1DF827FB00A557B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		526967BC1DF827FB00A557B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		526967BF1DF827FB00A557B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		526967C11DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526967C61DF827FB00A557B9 /* FallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526967CA1DF827FB00A557B9 /* FallyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallyTests.swift; sourceTree = "<group>"; };
+		526967CC1DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526967D11DF827FB00A557B9 /* FallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526967D51DF827FB00A557B9 /* FallyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallyUITests.swift; sourceTree = "<group>"; };
+		526967D71DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526967DA1DF827FB00A557B9 /* Fally WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fally WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526967E01DF827FB00A557B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		526967E21DF827FB00A557B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		526967E41DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fally WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526967EF1DF827FB00A557B9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		526967F01DF827FB00A557B9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		526967F41DF827FB00A557B9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		526967F61DF827FB00A557B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		526967F81DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		526967AF1DF827FB00A557B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967C31DF827FB00A557B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967CE1DF827FB00A557B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967E61DF827FB00A557B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526967A91DF827FB00A557B9 = {
+			isa = PBXGroup;
+			children = (
+				526967B41DF827FB00A557B9 /* Fally */,
+				526967C91DF827FB00A557B9 /* FallyTests */,
+				526967D41DF827FB00A557B9 /* FallyUITests */,
+				526967DE1DF827FB00A557B9 /* Fally WatchKit App */,
+				526967ED1DF827FB00A557B9 /* Fally WatchKit Extension */,
+				526967B31DF827FB00A557B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		526967B31DF827FB00A557B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526967B21DF827FB00A557B9 /* Fally.app */,
+				526967C61DF827FB00A557B9 /* FallyTests.xctest */,
+				526967D11DF827FB00A557B9 /* FallyUITests.xctest */,
+				526967DA1DF827FB00A557B9 /* Fally WatchKit App.app */,
+				526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		526967B41DF827FB00A557B9 /* Fally */ = {
+			isa = PBXGroup;
+			children = (
+				526967B51DF827FB00A557B9 /* AppDelegate.swift */,
+				526967B71DF827FB00A557B9 /* ViewController.swift */,
+				526967B91DF827FB00A557B9 /* Main.storyboard */,
+				526967BC1DF827FB00A557B9 /* Assets.xcassets */,
+				526967BE1DF827FB00A557B9 /* LaunchScreen.storyboard */,
+				526967C11DF827FB00A557B9 /* Info.plist */,
+			);
+			path = Fally;
+			sourceTree = "<group>";
+		};
+		526967C91DF827FB00A557B9 /* FallyTests */ = {
+			isa = PBXGroup;
+			children = (
+				526967CA1DF827FB00A557B9 /* FallyTests.swift */,
+				526967CC1DF827FB00A557B9 /* Info.plist */,
+			);
+			path = FallyTests;
+			sourceTree = "<group>";
+		};
+		526967D41DF827FB00A557B9 /* FallyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				526967D51DF827FB00A557B9 /* FallyUITests.swift */,
+				526967D71DF827FB00A557B9 /* Info.plist */,
+			);
+			path = FallyUITests;
+			sourceTree = "<group>";
+		};
+		526967DE1DF827FB00A557B9 /* Fally WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				526967DF1DF827FB00A557B9 /* Interface.storyboard */,
+				526967E21DF827FB00A557B9 /* Assets.xcassets */,
+				526967E41DF827FB00A557B9 /* Info.plist */,
+			);
+			path = "Fally WatchKit App";
+			sourceTree = "<group>";
+		};
+		526967ED1DF827FB00A557B9 /* Fally WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				526967F01DF827FB00A557B9 /* InterfaceController.swift */,
+				526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */,
+				526967F41DF827FB00A557B9 /* NotificationController.swift */,
+				526967F61DF827FB00A557B9 /* Assets.xcassets */,
+				526967F81DF827FB00A557B9 /* Info.plist */,
+				526967EE1DF827FB00A557B9 /* Supporting Files */,
+			);
+			path = "Fally WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		526967EE1DF827FB00A557B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				526967EF1DF827FB00A557B9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		526967B11DF827FB00A557B9 /* Fally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526968031DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally" */;
+			buildPhases = (
+				526967AE1DF827FB00A557B9 /* Sources */,
+				526967AF1DF827FB00A557B9 /* Frameworks */,
+				526967B01DF827FB00A557B9 /* Resources */,
+				526968021DF827FB00A557B9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526967DD1DF827FB00A557B9 /* PBXTargetDependency */,
+			);
+			name = Fally;
+			productName = Fally;
+			productReference = 526967B21DF827FB00A557B9 /* Fally.app */;
+			productType = "com.apple.product-type.application";
+		};
+		526967C51DF827FB00A557B9 /* FallyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526968061DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyTests" */;
+			buildPhases = (
+				526967C21DF827FB00A557B9 /* Sources */,
+				526967C31DF827FB00A557B9 /* Frameworks */,
+				526967C41DF827FB00A557B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526967C81DF827FB00A557B9 /* PBXTargetDependency */,
+			);
+			name = FallyTests;
+			productName = FallyTests;
+			productReference = 526967C61DF827FB00A557B9 /* FallyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		526967D01DF827FB00A557B9 /* FallyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526968091DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyUITests" */;
+			buildPhases = (
+				526967CD1DF827FB00A557B9 /* Sources */,
+				526967CE1DF827FB00A557B9 /* Frameworks */,
+				526967CF1DF827FB00A557B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526967D31DF827FB00A557B9 /* PBXTargetDependency */,
+			);
+			name = FallyUITests;
+			productName = FallyUITests;
+			productReference = 526967D11DF827FB00A557B9 /* FallyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		526967D91DF827FB00A557B9 /* Fally WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526967FF1DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally WatchKit App" */;
+			buildPhases = (
+				526967D81DF827FB00A557B9 /* Resources */,
+				526967FE1DF827FB00A557B9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526967EC1DF827FB00A557B9 /* PBXTargetDependency */,
+			);
+			name = "Fally WatchKit App";
+			productName = "Fally WatchKit App";
+			productReference = 526967DA1DF827FB00A557B9 /* Fally WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		526967E81DF827FB00A557B9 /* Fally WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526967FB1DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally WatchKit Extension" */;
+			buildPhases = (
+				526967E51DF827FB00A557B9 /* Sources */,
+				526967E61DF827FB00A557B9 /* Frameworks */,
+				526967E71DF827FB00A557B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fally WatchKit Extension";
+			productName = "Fally WatchKit Extension";
+			productReference = 526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526967AA1DF827FB00A557B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Parinthorn Saithong";
+				TargetAttributes = {
+					526967B11DF827FB00A557B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2ANP32V6N3;
+						ProvisioningStyle = Automatic;
+					};
+					526967C51DF827FB00A557B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2ANP32V6N3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 526967B11DF827FB00A557B9;
+					};
+					526967D01DF827FB00A557B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2ANP32V6N3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 526967B11DF827FB00A557B9;
+					};
+					526967D91DF827FB00A557B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2ANP32V6N3;
+						ProvisioningStyle = Automatic;
+					};
+					526967E81DF827FB00A557B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2ANP32V6N3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 526967AD1DF827FB00A557B9 /* Build configuration list for PBXProject "Fally" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526967A91DF827FB00A557B9;
+			productRefGroup = 526967B31DF827FB00A557B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526967B11DF827FB00A557B9 /* Fally */,
+				526967C51DF827FB00A557B9 /* FallyTests */,
+				526967D01DF827FB00A557B9 /* FallyUITests */,
+				526967D91DF827FB00A557B9 /* Fally WatchKit App */,
+				526967E81DF827FB00A557B9 /* Fally WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		526967B01DF827FB00A557B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967C01DF827FB00A557B9 /* LaunchScreen.storyboard in Resources */,
+				526967BD1DF827FB00A557B9 /* Assets.xcassets in Resources */,
+				526967BB1DF827FB00A557B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967C41DF827FB00A557B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967CF1DF827FB00A557B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967D81DF827FB00A557B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967E31DF827FB00A557B9 /* Assets.xcassets in Resources */,
+				526967E11DF827FB00A557B9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967E71DF827FB00A557B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		526967AE1DF827FB00A557B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967B81DF827FB00A557B9 /* ViewController.swift in Sources */,
+				526967B61DF827FB00A557B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967C21DF827FB00A557B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967CB1DF827FB00A557B9 /* FallyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967CD1DF827FB00A557B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967D61DF827FB00A557B9 /* FallyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526967E51DF827FB00A557B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */,
+				526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */,
+				526967F11DF827FB00A557B9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		526967C81DF827FB00A557B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526967B11DF827FB00A557B9 /* Fally */;
+			targetProxy = 526967C71DF827FB00A557B9 /* PBXContainerItemProxy */;
+		};
+		526967D31DF827FB00A557B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526967B11DF827FB00A557B9 /* Fally */;
+			targetProxy = 526967D21DF827FB00A557B9 /* PBXContainerItemProxy */;
+		};
+		526967DD1DF827FB00A557B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526967D91DF827FB00A557B9 /* Fally WatchKit App */;
+			targetProxy = 526967DC1DF827FB00A557B9 /* PBXContainerItemProxy */;
+		};
+		526967EC1DF827FB00A557B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526967E81DF827FB00A557B9 /* Fally WatchKit Extension */;
+			targetProxy = 526967EB1DF827FB00A557B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		526967B91DF827FB00A557B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526967BA1DF827FB00A557B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		526967BE1DF827FB00A557B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526967BF1DF827FB00A557B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		526967DF1DF827FB00A557B9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526967E01DF827FB00A557B9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		526967F91DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		526967FA1DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		526967FC1DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = "Fally WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		526967FD1DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = "Fally WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		526968001DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				IBSC_MODULE = Fally_WatchKit_Extension;
+				INFOPLIST_FILE = "Fally WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		526968011DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				IBSC_MODULE = Fally_WatchKit_Extension;
+				INFOPLIST_FILE = "Fally WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		526968041DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = Fally/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		526968051DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = Fally/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.Fally;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		526968071DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = FallyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.FallyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fally.app/Fally";
+			};
+			name = Debug;
+		};
+		526968081DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = FallyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.FallyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fally.app/Fally";
+			};
+			name = Release;
+		};
+		5269680A1DF827FB00A557B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = FallyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.FallyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fally;
+			};
+			name = Debug;
+		};
+		5269680B1DF827FB00A557B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2ANP32V6N3;
+				INFOPLIST_FILE = FallyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pirsquareff.FallyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fally;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526967AD1DF827FB00A557B9 /* Build configuration list for PBXProject "Fally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526967F91DF827FB00A557B9 /* Debug */,
+				526967FA1DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526967FB1DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526967FC1DF827FB00A557B9 /* Debug */,
+				526967FD1DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526967FF1DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526968001DF827FB00A557B9 /* Debug */,
+				526968011DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526968031DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526968041DF827FB00A557B9 /* Debug */,
+				526968051DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526968061DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526968071DF827FB00A557B9 /* Debug */,
+				526968081DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		526968091DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5269680A1DF827FB00A557B9 /* Debug */,
+				5269680B1DF827FB00A557B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 526967AA1DF827FB00A557B9 /* Project object */;
+}
