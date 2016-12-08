@@ -13,15 +13,36 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     
     @IBOutlet var counterLabel: WKInterfaceLabel!
+    @IBOutlet var counterGroup: WKInterfaceGroup!
+    @IBOutlet var headerLabel: WKInterfaceLabel!
     
-    var timerCounter = 30
+    let TIMER_MAX_BOUND = 30
+    var timerCounter: Int
     var timer = Timer()
 
+    override init() {
+        timerCounter = TIMER_MAX_BOUND
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
         setTitle("Fally")
+        
+        // Decorate headerLabel
+        let firstLine = "Are you alright?\n"
+        let firstLineAttr = [NSFontAttributeName: UIFont.systemFont(ofSize: 16), NSForegroundColorAttributeName: UIColor.white]
+        let firstLineAttrText = NSMutableAttributedString(string: firstLine, attributes: firstLineAttr)
+        
+        let secondLine = "Notify for help in"
+        let secondLineAttr = [NSFontAttributeName: UIFont.systemFont(ofSize: 13
+            ), NSForegroundColorAttributeName: UIColor.gray]
+        let secondLineAttrText = NSMutableAttributedString(string: secondLine, attributes: secondLineAttr)
+        
+        firstLineAttrText.append(secondLineAttrText)
+        headerLabel.setAttributedText(firstLineAttrText)
+        
         initTimer()
     }
     
@@ -42,14 +63,20 @@ class InterfaceController: WKInterfaceController {
         // Set init counter label
         let timeString = String(format: "00:%02d", timerCounter)
         counterLabel.setText("\(timeString)")
+        counterGroup.setBackgroundImageNamed("timer-ring\(timerCounter)")
     }
     
     func updateTimer() {
         timerCounter -= 1
         
+        if(timerCounter == 0) {
+            timer.invalidate()
+        }
+        
         // Update counter label
         let timeString = String(format: "00:%02d", timerCounter)
         counterLabel.setText("\(timeString)")
+        counterGroup.setBackgroundImageNamed("timer-ring\(timerCounter)")
     }
 
 }

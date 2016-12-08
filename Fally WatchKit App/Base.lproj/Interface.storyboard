@@ -29,21 +29,39 @@
                                 </group>
                             </items>
                         </group>
-                        <group width="1" height="52" alignment="left" id="JmX-wt-BWg">
+                        <group width="78" height="78" alignment="center" id="lNg-cl-Rvm">
                             <items>
-                                <group width="1" alignment="left" id="vT0-Fl-WVS">
+                                <group width="78" height="78" alignment="center" verticalAlignment="center" layout="vertical" id="JmX-wt-BWg">
                                     <items>
-                                        <label width="1" alignment="left" text="00:30" textAlignment="center" id="Rti-MA-IgO">
-                                            <color key="textColor" red="0.92156862750000001" green="0.1058823529" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
-                                        </label>
+                                        <group height="20" alignment="center" verticalAlignment="center" id="DCh-dY-znK">
+                                            <items>
+                                                <imageView height="1" alignment="center" verticalAlignment="center" image="fall-icon" contentMode="scaleAspectFit" id="IXg-zU-sJ1"/>
+                                            </items>
+                                            <variation key="device=watch42mm" height="25"/>
+                                        </group>
+                                        <group width="1" alignment="center" verticalAlignment="center" id="vT0-Fl-WVS">
+                                            <items>
+                                                <label width="1" alignment="left" text="00:30" textAlignment="center" id="Rti-MA-IgO">
+                                                    <color key="textColor" red="0.92156862750000001" green="0.1058823529" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                                    <variation key="device=watch42mm">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                                    </variation>
+                                                </label>
+                                            </items>
+                                        </group>
                                     </items>
+                                    <variation key="device=watch42mm" height="100" width="100"/>
                                 </group>
                             </items>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                            <variation key="device=watch42mm" height="100" width="100"/>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="counterGroup" destination="JmX-wt-BWg" id="xId-wI-3ra"/>
                         <outlet property="counterLabel" destination="Rti-MA-IgO" id="lD2-Zg-ia3"/>
+                        <outlet property="headerLabel" destination="6oY-WL-DzR" id="8o4-0f-aYc"/>
                     </connections>
                 </controller>
             </objects>
