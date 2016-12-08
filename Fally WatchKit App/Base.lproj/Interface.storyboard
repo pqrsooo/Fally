@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D5U-rD-mJ5">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,6 +17,10 @@
                         <button width="1" height="28" alignment="center" verticalAlignment="bottom" title="Tap here if you're ok" id="sFq-uU-Nfa">
                             <color key="titleColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="okButtonAction" destination="AgC-eL-Hgc" id="SbZ-31-sWy"/>
+                                <segue destination="iTE-YD-HAy" kind="modal" id="tio-tQ-6mC"/>
+                            </connections>
                         </button>
                         <group width="1" alignment="center" layout="vertical" id="jmq-dg-ZpY">
                             <items>
@@ -63,10 +67,75 @@
                         <outlet property="counterLabel" destination="Rti-MA-IgO" id="lD2-Zg-ia3"/>
                         <outlet property="fallIcon" destination="IXg-zU-sJ1" id="5xO-Ic-UE1"/>
                         <outlet property="headerLabel" destination="6oY-WL-DzR" id="8o4-0f-aYc"/>
+                        <outlet property="okButton" destination="sFq-uU-Nfa" id="MCj-Af-ZBL"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="335"/>
+            <point key="canvasLocation" x="468" y="337"/>
+        </scene>
+        <!--Notify Controller-->
+        <scene sceneID="z1A-rC-3hn">
+            <objects>
+                <controller spacing="7" id="YOu-pi-DAv" customClass="NotifyController" customModule="Fally_WatchKit_Extension">
+                    <items>
+                        <group width="60" height="60" alignment="center" verticalAlignment="center" radius="30" id="RUg-tP-T0m">
+                            <items>
+                                <imageView height="32" alignment="center" verticalAlignment="center" image="bell-icon" contentMode="scaleAspectFit" id="SIq-VW-9HF"/>
+                            </items>
+                            <color key="backgroundColor" red="0.92156862745098034" green="0.10588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="gWu-vW-wPM">
+                            <items>
+                                <label alignment="center" text="Notifying" textAlignment="center" id="chx-T5-zEN">
+                                    <color key="textColor" red="0.92156862750000001" green="0.1058823529" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="center" text="Austin Jones" textAlignment="center" id="bxd-f8-Npl"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="741" y="337"/>
+        </scene>
+        <!--After Tap Ok Controller-->
+        <scene sceneID="zjt-qs-ySH">
+            <objects>
+                <controller id="iTE-YD-HAy" customClass="AfterTapOkController" customModule="Fally_WatchKit_Extension">
+                    <items>
+                        <group width="44" height="44" alignment="center" radius="22" id="K3H-t8-isr">
+                            <items>
+                                <imageView height="26" alignment="left" verticalAlignment="center" image="smile-icon" contentMode="scaleAspectFit" id="ZdO-jt-eV5"/>
+                            </items>
+                            <color key="backgroundColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="left" id="JtN-rR-9nb">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Glad to hear you're ok!" textAlignment="center" numberOfLines="2" id="9JF-Il-EdY">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" layout="vertical" spacing="2" id="hFv-wI-e8o">
+                            <items>
+                                <button width="1" height="35" alignment="left" title="Back to home" id="OjH-Tl-mHc">
+                                    <color key="titleColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                    <connections>
+                                        <segue destination="D5U-rD-mJ5" kind="modal" id="cCY-B5-9hm"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="35" alignment="left" title="Oh, I didn't fall" id="0gG-MV-AsM">
+                                    <connections>
+                                        <segue destination="D5U-rD-mJ5" kind="modal" id="BWB-xv-6nc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="218" y="-28"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="ObD-0r-nFh">
@@ -138,7 +207,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="335"/>
+            <point key="canvasLocation" x="218" y="337"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -154,15 +223,18 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="218" y="677"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Fally_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="466" y="677"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cCY-B5-9hm"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.92156862745098034" green="0.10588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
 </document>

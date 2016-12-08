@@ -16,6 +16,7 @@ class FallDetectedController: WKInterfaceController {
     @IBOutlet var counterGroup: WKInterfaceGroup!
     @IBOutlet var headerLabel: WKInterfaceLabel!
     @IBOutlet var fallIcon: WKInterfaceImage!
+    @IBOutlet var okButton: WKInterfaceButton!
     
     let TIMER_MAX_BOUND = 30
     var timerCounter: Int
@@ -83,11 +84,11 @@ class FallDetectedController: WKInterfaceController {
     }
     
     func animateFallIcon() {
-        animate(withDuration: 0.3) {
+        animate(withDuration: 0.5) {
             self.fallIcon.setAlpha(0.4)
         }
-        delay(0.3) {
-            self.animate(withDuration: 0.7) {
+        delay(0.5) {
+            self.animate(withDuration: 0.5) {
                 self.fallIcon.setAlpha(1.0)
             }
         }
@@ -98,5 +99,9 @@ class FallDetectedController: WKInterfaceController {
             closure()
         }
     }
-
+    
+    @IBAction func okButtonAction() {
+        print("Tap!")
+    }
+    
 }

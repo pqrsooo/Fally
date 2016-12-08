@@ -24,6 +24,8 @@
 		526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967F61DF827FB00A557B9 /* Assets.xcassets */; };
 		5269680D1DF9511C00A557B9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269680C1DF9511C00A557B9 /* HomeController.swift */; };
 		526968101DF9837E00A557B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5269680F1DF9837E00A557B9 /* CoreLocation.framework */; };
+		526968121DF995DF00A557B9 /* NotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526968111DF995DF00A557B9 /* NotifyController.swift */; };
+		52BDE6851DF9A8A800490D3C /* AfterTapOkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDE6841DF9A8A800490D3C /* AfterTapOkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		526967F81DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5269680C1DF9511C00A557B9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		5269680F1DF9837E00A557B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		526968111DF995DF00A557B9 /* NotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyController.swift; sourceTree = "<group>"; };
+		52BDE6841DF9A8A800490D3C /* AfterTapOkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterTapOkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 			children = (
 				5269680C1DF9511C00A557B9 /* HomeController.swift */,
 				526967F01DF827FB00A557B9 /* FallDetectedController.swift */,
+				52BDE6841DF9A8A800490D3C /* AfterTapOkController.swift */,
+				526968111DF995DF00A557B9 /* NotifyController.swift */,
 				526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */,
 				526967F41DF827FB00A557B9 /* NotificationController.swift */,
 				526967F61DF827FB00A557B9 /* Assets.xcassets */,
@@ -485,8 +491,10 @@
 			files = (
 				5269680D1DF9511C00A557B9 /* HomeController.swift in Sources */,
 				526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */,
+				52BDE6851DF9A8A800490D3C /* AfterTapOkController.swift in Sources */,
 				526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */,
 				526967F11DF827FB00A557B9 /* FallDetectedController.swift in Sources */,
+				526968121DF995DF00A557B9 /* NotifyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
