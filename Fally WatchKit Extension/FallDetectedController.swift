@@ -15,6 +15,7 @@ class FallDetectedController: WKInterfaceController {
     @IBOutlet var counterLabel: WKInterfaceLabel!
     @IBOutlet var counterGroup: WKInterfaceGroup!
     @IBOutlet var headerLabel: WKInterfaceLabel!
+    @IBOutlet var fallIcon: WKInterfaceImage!
     
     let TIMER_MAX_BOUND = 30
     var timerCounter: Int
@@ -27,7 +28,6 @@ class FallDetectedController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
         setTitle("Fally")
         
         // Decorate headerLabel
@@ -60,7 +60,7 @@ class FallDetectedController: WKInterfaceController {
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true);
         
-        // Set init counter label
+        // Init counter label and timer ring
         let timeString = String(format: "00:%02d", timerCounter)
         counterLabel.setText("\(timeString)")
         counterGroup.setBackgroundImageNamed("timer-ring\(timerCounter)")
@@ -71,12 +71,32 @@ class FallDetectedController: WKInterfaceController {
         
         if(timerCounter == 0) {
             timer.invalidate()
+            // TODO: Segue to notifying view
         }
         
-        // Update counter label
+        // Update counter label and timer ring
         let timeString = String(format: "00:%02d", timerCounter)
         counterLabel.setText("\(timeString)")
         counterGroup.setBackgroundImageNamed("timer-ring\(timerCounter)")
+        
+        animateFallIcon()
+    }
+    
+    func animateFallIcon() {
+        animate(withDuration: 0.3) {
+            self.fallIcon.setAlpha(0.4)
+        }
+        delay(0.3) {
+            self.animate(withDuration: 0.7) {
+                self.fallIcon.setAlpha(1.0)
+            }
+        }
+    }
+    
+    func delay(_ delay: Double, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            closure()
+        }
     }
 
 }

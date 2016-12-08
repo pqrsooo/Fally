@@ -61,6 +61,7 @@
                     <connections>
                         <outlet property="counterGroup" destination="JmX-wt-BWg" id="xId-wI-3ra"/>
                         <outlet property="counterLabel" destination="Rti-MA-IgO" id="lD2-Zg-ia3"/>
+                        <outlet property="fallIcon" destination="IXg-zU-sJ1" id="5xO-Ic-UE1"/>
                         <outlet property="headerLabel" destination="6oY-WL-DzR" id="8o4-0f-aYc"/>
                     </connections>
                 </controller>
