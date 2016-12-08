@@ -18,7 +18,7 @@
 		526967E11DF827FB00A557B9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526967DF1DF827FB00A557B9 /* Interface.storyboard */; };
 		526967E31DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967E21DF827FB00A557B9 /* Assets.xcassets */; };
 		526967EA1DF827FB00A557B9 /* Fally WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		526967F11DF827FB00A557B9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F01DF827FB00A557B9 /* InterfaceController.swift */; };
+		526967F11DF827FB00A557B9 /* FallDetectedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F01DF827FB00A557B9 /* FallDetectedController.swift */; };
 		526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */; };
 		526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F41DF827FB00A557B9 /* NotificationController.swift */; };
 		526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967F61DF827FB00A557B9 /* Assets.xcassets */; };
@@ -100,7 +100,7 @@
 		526967E41DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526967E91DF827FB00A557B9 /* Fally WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fally WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		526967EF1DF827FB00A557B9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		526967F01DF827FB00A557B9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		526967F01DF827FB00A557B9 /* FallDetectedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallDetectedController.swift; sourceTree = "<group>"; };
 		526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		526967F41DF827FB00A557B9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		526967F61DF827FB00A557B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		526967ED1DF827FB00A557B9 /* Fally WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				526967F01DF827FB00A557B9 /* InterfaceController.swift */,
+				526967F01DF827FB00A557B9 /* FallDetectedController.swift */,
 				526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */,
 				526967F41DF827FB00A557B9 /* NotificationController.swift */,
 				526967F61DF827FB00A557B9 /* Assets.xcassets */,
@@ -455,7 +455,7 @@
 			files = (
 				526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */,
 				526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */,
-				526967F11DF827FB00A557B9 /* InterfaceController.swift in Sources */,
+				526967F11DF827FB00A557B9 /* FallDetectedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

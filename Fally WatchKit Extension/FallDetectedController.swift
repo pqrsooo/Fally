@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class FallDetectedController: WKInterfaceController {
     
     @IBOutlet var counterLabel: WKInterfaceLabel!
     @IBOutlet var counterGroup: WKInterfaceGroup!
