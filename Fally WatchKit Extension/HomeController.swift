@@ -11,7 +11,7 @@ import Foundation
 import CoreLocation
 
 
-class HomeController: WKInterfaceController {
+class HomeController: WKInterfaceController, CLLocationManagerDelegate {
     
     @IBOutlet var profileImg: WKInterfaceImage!
     @IBOutlet var helloMsg: WKInterfaceLabel!
@@ -19,6 +19,7 @@ class HomeController: WKInterfaceController {
     @IBOutlet var locationMap: WKInterfaceMap!
     
     var locationManager: CLLocationManager = CLLocationManager()
+    var locationMapDetail: CLLocationCoordinate2D?
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -38,7 +39,10 @@ class HomeController: WKInterfaceController {
         firstLineAttrText.append(secondLineAttrText)
         helloMsg.setAttributedText(firstLineAttrText)
         
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestLocation()
     }
 
     override func willActivate() {
@@ -51,4 +55,22 @@ class HomeController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let currentLocation = locations[0]
+        let lat = currentLocation.coordinate.latitude
+        let long = currentLocation.coordinate.longitude
+        
+        self.locationMapDetail = CLLocationCoordinate2DMake(lat, long)
+        
+        let span = MKCoordinateSpanMake(0.1, 0.1)
+        
+        let region = MKCoordinateRegionMake(self.locationMapDetail!, span)
+        self.locationMap.setRegion(region)
+        
+        self.locationMap.addAnnotation(self.locationMapDetail!, with: .red)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
+    }
 }

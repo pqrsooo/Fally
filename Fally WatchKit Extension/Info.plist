@@ -30,6 +30,10 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Accessing this information to locate your current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Accessing this information to locate your current location</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>
