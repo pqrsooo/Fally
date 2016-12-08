@@ -28,7 +28,7 @@ class FallDetectedController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        setTitle("Fally")
+        setTitle("Fall Alert")
         
         // Decorate headerLabel
         let firstLine = "Are you alright?\n"

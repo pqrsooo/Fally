@@ -22,6 +22,7 @@
 		526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */; };
 		526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967F41DF827FB00A557B9 /* NotificationController.swift */; };
 		526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526967F61DF827FB00A557B9 /* Assets.xcassets */; };
+		5269680D1DF9511C00A557B9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269680C1DF9511C00A557B9 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		526967F41DF827FB00A557B9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		526967F61DF827FB00A557B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526967F81DF827FB00A557B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5269680C1DF9511C00A557B9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		526967ED1DF827FB00A557B9 /* Fally WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5269680C1DF9511C00A557B9 /* HomeController.swift */,
 				526967F01DF827FB00A557B9 /* FallDetectedController.swift */,
 				526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */,
 				526967F41DF827FB00A557B9 /* NotificationController.swift */,
@@ -453,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5269680D1DF9511C00A557B9 /* HomeController.swift in Sources */,
 				526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */,
 				526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */,
 				526967F11DF827FB00A557B9 /* FallDetectedController.swift in Sources */,
@@ -776,6 +780,7 @@
 				526967FD1DF827FB00A557B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526967FF1DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +789,7 @@
 				526968011DF827FB00A557B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526968031DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "Fally" */ = {
 			isa = XCConfigurationList;
@@ -792,6 +798,7 @@
 				526968051DF827FB00A557B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526968061DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyTests" */ = {
 			isa = XCConfigurationList;
@@ -800,6 +807,7 @@
 				526968081DF827FB00A557B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526968091DF827FB00A557B9 /* Build configuration list for PBXNativeTarget "FallyUITests" */ = {
 			isa = XCConfigurationList;
@@ -808,6 +816,7 @@
 				5269680B1DF827FB00A557B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
