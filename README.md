@@ -49,6 +49,7 @@ Then, select ```Arguments``` and under ```Environment Variables```edit ```input`
 
 ![Input value](/Readme/image/input-value.png?raw=true "Input value")
 
+### Run in Simulator
 Eventually, your app is ready to run. Make sure that ```Fally WatchKit App``` Scheme is selected before clicking ```Build and then run the current scheme```.
 
 ![Select scheme](/Readme/image/select-scheme.png?raw=true "Select scheme")
