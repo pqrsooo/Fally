@@ -104,6 +104,7 @@ class FallDetectedController: WKInterfaceController {
     }
     
     @IBAction func okButtonAction() {
+        timer.invalidate()
         self.pushController(withName: "AfterTapOk", context: nil)
     }
     

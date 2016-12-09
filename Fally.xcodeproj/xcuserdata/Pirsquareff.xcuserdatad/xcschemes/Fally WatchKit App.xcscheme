@@ -96,7 +96,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "input"
-            value = "fall12"
+            value = "adl1"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
