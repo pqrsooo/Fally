@@ -18,7 +18,7 @@ for help.
 ### Prerequisites
 
 This project requires the Xcode 8 and WatchOS 3.1<br>
-See [this link](https://developer.apple.com/xcode/) for further details about Xcode
+:point_right: See [this link](https://developer.apple.com/xcode/) for further details about Xcode
 
 ### Build and Run
 
