@@ -26,7 +26,7 @@ Using Apple Watch's Simulator, Xcode built-in, to simulate this application
 
 ## How to run in Simulator
 ### Input file
-Since Xcode simulator doesn't provide the feature which allow us to simulate CMDeviceMotion data directly, we'll use an input file to feed Fally mock up acceleration data; in x, y and z axises instead.<br>
+Since Xcode simulator doesn't provide the feature which allows us to simulate CMDeviceMotion data directly, we'll use an input file to feed Fally mock up acceleration data; in x, y and z axises instead.<br>
 An input file fed to Fally must be conform to the following pattern:
 
 #### input_file_name.txt
@@ -61,8 +61,8 @@ Eventually, your app is ready to run. Make sure that ```Fally WatchKit App``` Sc
 
 ## Authors
 
-* **Parinthorn Saithong** (@pirsquareff)
-* **Sirinthra Chantharaj** (@sirinthra-cc)
+* **Parinthorn Saithong** ([@pirsquareff](https://github.com/pirsquareff))
+* **Sirinthra Chantharaj** ([@sirinthra-cc](https://github.com/sirinthra-cc))
 
 ## Citation
 
