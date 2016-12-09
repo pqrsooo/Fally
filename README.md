@@ -8,7 +8,7 @@ an “Tap here if you're ok” button within the specify time,
 Fally will automatically notify your family
 for help.
 
-** Make Fally be a part of your daily life to protect yourself and your loved one. **
+**Make Fally be a part of your daily life to protect yourself and your loved one.**
 
 ## Screenshot
 ![Fally screenshot](/Readme/image/fally-screenshot.png?raw=true "Fally screenshot")
@@ -39,7 +39,7 @@ An input file fed to Fally must be conform to the following pattern:
 **Note that** `,,` in front of each line cannot be omitted and all `acceleration_?_axis` is in G unit.<br>
 :point_right: See example of input file [here](Fally WatchKit Extension/fall25.txt).
 
-Then, add all input files under ```Fally Watchkit Extension``` group in Xcode.
+Then, add all input files under ```Fally Watchkit Extension/SimulatedInputFile``` group in Xcode.
 
 ![Input file location](/Readme/image/input-file-location.png?raw=true "Input file location")
 
