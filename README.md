@@ -38,7 +38,22 @@ Note that `,,` in front of each line cannot be omitted and all `acceleration_?_a
 
 Then, add all input files under ```Fally Watchkit Extension``` group in Xcode.
 
-![Fally Screenshot](/Readme/image/input-file-location.png?raw=true "Fally Screenshot")
+![Input file location](/Readme/image/input-file-location.png?raw=true "Input file location")
+
+### Include your Input File in Simulator Scheme
+Select ```Edit Scheme...``` from build panel as seen in an image below.
+
+![Edit scheme](/Readme/image/edit-scheme.png?raw=true "Edit scheme")
+
+Then, select ```Arguments``` and under ```Environment Variables```edit ```input``` value to match your input file name without file extension.
+
+![Input value](/Readme/image/input-value.png?raw=true "Input value")
+
+Eventually, your app is ready to run. Make sure that ```Fally WatchKit App``` Scheme is selected before clicking ```Build and then run the current scheme```.
+
+![Select scheme](/Readme/image/select-scheme.png?raw=true "Select scheme")
+
+![Build and then run](/Readme/image/build-and-then-run.png?raw=true "Build and then run")
 
 ## License
 
