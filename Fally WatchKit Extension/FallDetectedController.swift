@@ -73,6 +73,9 @@ class FallDetectedController: WKInterfaceController {
         if(timerCounter == 0) {
             timer.invalidate()
             // TODO: Segue to notifying view
+            self.pushController(withName: "NotifyView", context: nil)
+            
+            HiddenMarkovModel.hmm.clearState()
         }
         
         // Update counter label and timer ring
@@ -80,7 +83,7 @@ class FallDetectedController: WKInterfaceController {
         counterLabel.setText("\(timeString)")
         counterGroup.setBackgroundImageNamed("timer-ring\(timerCounter)")
         
-        animateFallIcon()
+        // animateFallIcon()
     }
     
     func animateFallIcon() {
@@ -101,7 +104,7 @@ class FallDetectedController: WKInterfaceController {
     }
     
     @IBAction func okButtonAction() {
-        print("Tap!")
+        self.pushController(withName: "AfterTapOk", context: nil)
     }
     
 }

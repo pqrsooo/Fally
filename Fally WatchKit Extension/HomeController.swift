@@ -9,17 +9,30 @@
 import WatchKit
 import Foundation
 import CoreLocation
+import Dispatch
 
+var hasEverStartedWorkout = false
+var fallDetected = false
 
-class HomeController: WKInterfaceController, CLLocationManagerDelegate {
+class HomeController: WKInterfaceController, CLLocationManagerDelegate, WorkoutManagerDelegate {
     
     @IBOutlet var profileImg: WKInterfaceImage!
     @IBOutlet var helloMsg: WKInterfaceLabel!
-    @IBOutlet var locationString: WKInterfaceLabel!
     @IBOutlet var locationMap: WKInterfaceMap!
     
     var locationManager: CLLocationManager = CLLocationManager()
     var locationMapDetail: CLLocationCoordinate2D?
+    var mockLocation = true
+    
+    static let workoutManager = WorkoutManager()
+
+    // MARK: Initialization
+    
+    override init() {
+        super.init()
+        
+        HomeController.workoutManager.delegate = self
+    }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -42,12 +55,25 @@ class HomeController: WKInterfaceController, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
-        locationManager.requestLocation()
+        
+        if !mockLocation {
+            locationManager.requestLocation()
+        } else {
+            print("Mock map location")
+            mockLocationMap()
+        }
+        
+        if !hasEverStartedWorkout {
+            hasEverStartedWorkout = true
+            HomeController.workoutManager.startWorkout()
+            print("Start workout")
+        }
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        fallDetected = false
     }
 
     override func didDeactivate() {
@@ -72,5 +98,28 @@ class HomeController: WKInterfaceController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
+    }
+    
+    func mockLocationMap() {
+        self.locationMapDetail = CLLocationCoordinate2D(
+            latitude: 13.735963,
+            longitude: 100.533841
+        )
+        
+        let span = MKCoordinateSpanMake(0.1, 0.1)
+        let region = MKCoordinateRegion(center: self.locationMapDetail!, span: span)
+        self.locationMap.setRegion(region)
+        self.locationMap.addAnnotation(self.locationMapDetail!, with: .red)
+    }
+    
+    // MARK: WorkoutManagerDelegate
+    
+    func didFallDetected(_ manager: WorkoutManager) {
+        DispatchQueue.main.async {
+            if !fallDetected {
+                fallDetected = true
+                self.pushController(withName: "FallDetectedView", context: nil)
+            }
+        }
     }
 }

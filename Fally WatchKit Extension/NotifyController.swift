@@ -16,6 +16,11 @@ class NotifyController: WKInterfaceController {
         super.awake(withContext: context)
         
         setTitle("Notify")
+        
+        delay(3.0) {
+            HomeController.workoutManager.startUpdates()
+            self.popToRootController()
+        }
     }
 
     override func willActivate() {
@@ -26,6 +31,12 @@ class NotifyController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    func delay(_ delay: Double, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            closure()
+        }
     }
 
 }

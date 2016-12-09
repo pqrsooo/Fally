@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524660911DF9F51A00B7DD4E /* HiddenMarkovModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524660901DF9F51A00B7DD4E /* HiddenMarkovModel.swift */; };
+		524660931DFA094D00B7DD4E /* adl1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 524660921DFA094D00B7DD4E /* adl1.txt */; };
+		524660951DFA0DBE00B7DD4E /* adl2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 524660941DFA0DBE00B7DD4E /* adl2.txt */; };
+		524660971DFA0EAB00B7DD4E /* fall25.txt in Resources */ = {isa = PBXBuildFile; fileRef = 524660961DFA0EAB00B7DD4E /* fall25.txt */; };
+		5246609B1DFA2EFE00B7DD4E /* fall12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5246609A1DFA2EFE00B7DD4E /* fall12.txt */; };
 		526967B61DF827FB00A557B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967B51DF827FB00A557B9 /* AppDelegate.swift */; };
 		526967B81DF827FB00A557B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526967B71DF827FB00A557B9 /* ViewController.swift */; };
 		526967BB1DF827FB00A557B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526967B91DF827FB00A557B9 /* Main.storyboard */; };
@@ -26,6 +31,9 @@
 		526968101DF9837E00A557B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5269680F1DF9837E00A557B9 /* CoreLocation.framework */; };
 		526968121DF995DF00A557B9 /* NotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526968111DF995DF00A557B9 /* NotifyController.swift */; };
 		52BDE6851DF9A8A800490D3C /* AfterTapOkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDE6841DF9A8A800490D3C /* AfterTapOkController.swift */; };
+		52BDE6871DF9AF4E00490D3C /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDE6861DF9AF4E00490D3C /* WorkoutManager.swift */; };
+		52BDE6891DF9B04700490D3C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDE6881DF9B04700490D3C /* MotionManager.swift */; };
+		52BDE68B1DF9E5B300490D3C /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDE68A1DF9E5B300490D3C /* StreamReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		524660901DF9F51A00B7DD4E /* HiddenMarkovModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenMarkovModel.swift; sourceTree = "<group>"; };
+		524660921DFA094D00B7DD4E /* adl1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adl1.txt; sourceTree = "<group>"; };
+		524660941DFA0DBE00B7DD4E /* adl2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adl2.txt; sourceTree = "<group>"; };
+		524660961DFA0EAB00B7DD4E /* fall25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fall25.txt; sourceTree = "<group>"; };
+		5246609A1DFA2EFE00B7DD4E /* fall12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fall12.txt; sourceTree = "<group>"; };
 		526967B21DF827FB00A557B9 /* Fally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526967B51DF827FB00A557B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526967B71DF827FB00A557B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +126,9 @@
 		5269680F1DF9837E00A557B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		526968111DF995DF00A557B9 /* NotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyController.swift; sourceTree = "<group>"; };
 		52BDE6841DF9A8A800490D3C /* AfterTapOkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterTapOkController.swift; sourceTree = "<group>"; };
+		52BDE6861DF9AF4E00490D3C /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		52BDE6881DF9B04700490D3C /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		52BDE68A1DF9E5B300490D3C /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,9 +240,17 @@
 				526968111DF995DF00A557B9 /* NotifyController.swift */,
 				526967F21DF827FB00A557B9 /* ExtensionDelegate.swift */,
 				526967F41DF827FB00A557B9 /* NotificationController.swift */,
+				52BDE68A1DF9E5B300490D3C /* StreamReader.swift */,
 				526967F61DF827FB00A557B9 /* Assets.xcassets */,
 				526967F81DF827FB00A557B9 /* Info.plist */,
 				526967EE1DF827FB00A557B9 /* Supporting Files */,
+				524660901DF9F51A00B7DD4E /* HiddenMarkovModel.swift */,
+				52BDE6861DF9AF4E00490D3C /* WorkoutManager.swift */,
+				52BDE6881DF9B04700490D3C /* MotionManager.swift */,
+				524660921DFA094D00B7DD4E /* adl1.txt */,
+				524660941DFA0DBE00B7DD4E /* adl2.txt */,
+				5246609A1DFA2EFE00B7DD4E /* fall12.txt */,
+				524660961DFA0EAB00B7DD4E /* fall25.txt */,
 			);
 			path = "Fally WatchKit Extension";
 			sourceTree = "<group>";
@@ -387,7 +411,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes.watchos.extension = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -453,6 +477,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524660931DFA094D00B7DD4E /* adl1.txt in Resources */,
+				524660951DFA0DBE00B7DD4E /* adl2.txt in Resources */,
+				524660971DFA0EAB00B7DD4E /* fall25.txt in Resources */,
+				5246609B1DFA2EFE00B7DD4E /* fall12.txt in Resources */,
 				526967F71DF827FB00A557B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,11 +518,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5269680D1DF9511C00A557B9 /* HomeController.swift in Sources */,
+				524660911DF9F51A00B7DD4E /* HiddenMarkovModel.swift in Sources */,
+				52BDE6871DF9AF4E00490D3C /* WorkoutManager.swift in Sources */,
 				526967F51DF827FB00A557B9 /* NotificationController.swift in Sources */,
+				52BDE68B1DF9E5B300490D3C /* StreamReader.swift in Sources */,
 				52BDE6851DF9A8A800490D3C /* AfterTapOkController.swift in Sources */,
 				526967F31DF827FB00A557B9 /* ExtensionDelegate.swift in Sources */,
 				526967F11DF827FB00A557B9 /* FallDetectedController.swift in Sources */,
 				526968121DF995DF00A557B9 /* NotifyController.swift in Sources */,
+				52BDE6891DF9B04700490D3C /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

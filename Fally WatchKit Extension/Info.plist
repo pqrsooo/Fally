@@ -34,6 +34,12 @@
 	<string>Accessing this information to locate your current location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Accessing this information to locate your current location</string>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>workout-processing</string>
+	</array>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>

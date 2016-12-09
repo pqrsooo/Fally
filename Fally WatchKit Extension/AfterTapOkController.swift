@@ -16,6 +16,7 @@ class AfterTapOkController: WKInterfaceController {
         super.awake(withContext: context)
         
         setTitle("Ok")
+        HiddenMarkovModel.hmm.clearState()
     }
 
     override func willActivate() {
@@ -28,4 +29,16 @@ class AfterTapOkController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    // MARK: Actions
+    
+    @IBAction func closeAction() {
+        HomeController.workoutManager.startUpdates()
+        self.popToRootController()
+    }
+    
+    @IBAction func didNotFallAction() {
+        HiddenMarkovModel.hmm.punish()
+        HomeController.workoutManager.startUpdates()
+        self.popToRootController()
+    }
 }
