@@ -8,6 +8,8 @@ an “Tap here if you're ok” button within the specify time,
 Fally will automatically notify your family
 for help.
 
+** Make Fally be a part of your daily life to protect yourself and your loved one. **
+
 ## Screenshot
 ![Fally screenshot](/Readme/image/fally-screenshot.png?raw=true "Fally screenshot")
 
@@ -64,11 +66,11 @@ Eventually, your app is ready to run. Make sure that ```Fally WatchKit App``` Sc
 
 ## Citation
 
-* Bogdan Kwolek, Michal Kepski, Human fall detection on embedded platform using depth maps and wireless accelerometer, Computer Methods and Programs in Biomedicine, Volume 117, Issue 3, December 2014, Pages 489-501, ISSN 0169-2607 [[Link]](http://home.agh.edu.pl/~bkw/research/pdf/2014/KwolekKepski_CMBP2014.pdf)
+* Bogdan Kwolek, Michal Kepski, Human fall detection on embedded platform using depth maps and wireless accelerometer, Computer Methods and Programs in Biomedicine, Volume 117, Issue 3, December 2014, Pages 489-501, ISSN 0169-2607. [[Link]](http://home.agh.edu.pl/~bkw/research/pdf/2014/KwolekKepski_CMBP2014.pdf)
 
 ## Warning
 
-Since main purpose of this application is to demonstrate human fall detection algorithm, most part of this application are **partially implemented**
+Since main purpose of this application is to demonstrate human fall detection algorithm, most part of this application are **partially implemented**.
 
 And we also know that we should promote such this important section to the top of this README.md :grinning:
 
