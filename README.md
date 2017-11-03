@@ -4,7 +4,7 @@ Fally is an app designed for detecting
 human falls especially for elder people.
 
 When fall detected and you don’t press
-an “Tap here if you're ok” button within the specify time,
+an “Tap here if you're ok” button within the specific time,
 Fally will automatically notify your family
 for help.
 
@@ -27,7 +27,7 @@ Using Apple Watch's Simulator, Xcode built-in, to simulate this application
 ## How to run in Simulator
 ### Input file
 Since Xcode simulator doesn't provide the feature which allows us to simulate CMDeviceMotion data directly, we'll use an input file to feed Fally mock up acceleration data; in x, y and z axises instead.<br>
-An input file fed to Fally must be conform to the following pattern:
+An input file fed to Fally must be conformed to the following pattern:
 
 #### input_file_name.txt
 ```
@@ -76,4 +76,4 @@ And we also know that we should promote such this important section to the top o
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
